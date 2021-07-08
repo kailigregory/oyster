@@ -1,0 +1,441 @@
+﻿number,year,month,location,strain,sex,length,ds
+1,2018,june,HH,wild,m,38,late active
+2,2018,june,HH,wild,m,36,mature
+3,2018,june,HH,wild,f,26,mature
+4,2018,june,HH,wild,m,30,late active
+5,2018,june,HH,wild,m,32,mature
+6,2018,june,HH,wild,m,36,early active
+7,2018,june,HH,wild,m,42,mature
+8,2018,june,HH,wild,f,41,late active
+9,2018,june,HH,wild,m,42,late active
+10,2018,june,HH,wild,m,41,mature
+11,2018,june,HH,wild,m,36,mature
+12,2018,june,HH,wild,f,37,late active
+13,2018,june,HH,wild,m,33,late active
+1,2018,june,HH,hatchery,f,31,early active
+2,2018,june,HH,hatchery,m,30,early active
+3,2018,june,HH,hatchery,m,37,mature
+4,2018,june,HH,hatchery,m,37,late active
+5,2018,june,HH,hatchery,m,26,late active
+6,2018,june,HH,hatchery,m,29,late active
+7,2018,june,HH,hatchery,f,35,mature
+8,2018,june,HH,hatchery,m,42,mature
+9,2018,june,HH,hatchery,m,36,late active
+10,2018,june,HH,hatchery,m,33,mature
+11,2018,june,HH,hatchery,m,35,early active
+12,2018,june,HH,hatchery,m,24,late active
+13,2018,june,HH,hatchery,f,44,mature
+1,2018,june,HH,aquaculture,f,56,late active
+2,2018,june,HH,aquaculture,m,52,late active
+3,2018,june,HH,aquaculture,m,50,late active
+4,2018,june,HH,aquaculture,m,45,mature
+5,2018,june,HH,aquaculture,m,52,late active
+6,2018,june,HH,aquaculture,m,38,mature
+7,2018,june,HH,aquaculture,f,50,mature
+8,2018,june,HH,aquaculture,f,54,late active
+9,2018,june,HH,aquaculture,m,43,mature
+10,2018,june,HH,aquaculture,m,58,mature
+11,2018,june,HH,aquaculture,m,36,late active
+12,2018,june,HH,aquaculture,m,42,mature
+13,2018,june,HH,aquaculture,m,49,mature
+1,2018,june,SB,wild,m,54,spawned
+2,2018,june,SB,wild,m,38,mature
+3,2018,june,SB,wild,m,31,early active
+4,2018,june,SB,wild,m,28,mature
+5,2018,june,SB,wild,m,40,mature
+6,2018,june,SB,wild,m,31,spawned
+7,2018,june,SB,wild,m,38,mature
+8,2018,june,SB,wild,m,42,mature
+9,2018,june,SB,wild,f,42,mature
+10,2018,june,SB,wild,m,34,mature
+11,2018,june,SB,wild,m,48,mature
+12,2018,june,SB,wild,f,42,late active
+13,2018,june,SB,wild,m,36,mature
+1,2018,june,SB,hatchery,m,54,mature
+2,2018,june,SB,hatchery,m,47,late active
+3,2018,june,SB,hatchery,f,46,mature
+4,2018,june,SB,hatchery,m,35,mature
+5,2018,june,SB,hatchery,m,38,mature
+6,2018,june,SB,hatchery,m,41,mature
+7,2018,june,SB,hatchery,m,53,mature
+8,2018,june,SB,hatchery,m,56,mature
+9,2018,june,SB,hatchery,f,55,late active
+10,2018,june,SB,hatchery,m,60,spawned
+11,2018,june,SB,hatchery,m,54,mature
+12,2018,june,SB,hatchery,m,53,mature
+13,2018,june,SB,hatchery,f,57,late active
+1,2018,june,SB,aquaculture,m,80,late active
+2,2018,june,SB,aquaculture,m,58,mature
+3,2018,june,SB,aquaculture,m,62,mature
+4,2018,june,SB,aquaculture,m,42,mature
+5,2018,june,SB,aquaculture,f,54,mature
+6,2018,june,SB,aquaculture,m,43,mature
+7,2018,june,SB,aquaculture,f,74,mature
+8,2018,june,SB,aquaculture,f,77,mature
+9,2018,june,SB,aquaculture,f,47,late active
+10,2018,june,SB,aquaculture,m,57,mature
+11,2018,june,SB,aquaculture,m,41,mature
+12,2018,june,SB,aquaculture,m,45,early active
+13,2018,june,SB,aquaculture,m,75,mature
+1,2018,june,PGB,wild,f,59,early active
+2,2018,june,PGB,wild,m,45,late active
+3,2018,june,PGB,wild,m,53,early active
+4,2018,june,PGB,wild,f,44,late active
+5,2018,june,PGB,wild,m,42,early active
+6,2018,june,PGB,wild,m,37,early active
+7,2018,june,PGB,wild,m,50,early active
+8,2018,june,PGB,wild,f,51,late active
+9,2018,june,PGB,wild,f,50,late active
+10,2018,june,PGB,wild,m,43,early active
+11,2018,june,PGB,wild,m,43,early active
+12,2018,june,PGB,wild,f,42,late active
+13,2018,june,PGB,wild,m,44,late active
+1,2018,june,PGB,aquaculture,m,61,early active
+2,2018,june,PGB,aquaculture,m,72,late active
+3,2018,june,PGB,aquaculture,m,52,late active
+4,2018,june,PGB,aquaculture,m,91,early active
+5,2018,june,PGB,aquaculture,m,78,mature
+6,2018,june,PGB,aquaculture,f,93,late active
+7,2018,june,PGB,aquaculture,f,96,late active
+8,2018,june,PGB,aquaculture,m,67,late active
+9,2018,june,PGB,aquaculture,m,82,late active
+11,2018,june,PGB,aquaculture,m,69,spawned
+12,2018,june,PGB,aquaculture,m,59,early active
+13,2018,june,PGB,aquaculture,m,80,mature
+1,2018,july,HH,wild,m,51,mature
+2,2018,july,HH,wild,m,55,mature
+3,2018,july,HH,wild,f,74,mature
+4,2018,july,HH,wild,m,32,mature
+5,2018,july,HH,wild,f,34,late active
+6,2018,july,HH,wild,m,41,mature
+7,2018,july,HH,wild,f,44,mature
+8,2018,july,HH,wild,f,35,late active
+9,2018,july,HH,wild,m,34,mature
+10,2018,july,HH,wild,f,46,mature
+11,2018,july,HH,wild,m,25,mature
+12,2018,july,HH,wild,f,39,late active
+13,2018,july,HH,wild,m,29,mature
+14,2018,july,HH,wild,m,44,mature
+15,2018,july,HH,wild,f,41,mature
+16,2018,july,HH,wild,f,44,late active
+17,2018,july,HH,wild,m,43,mature
+18,2018,july,HH,wild,f,41,late active
+19,2018,july,HH,wild,m,33,mature
+20,2018,july,HH,wild,f,30,mature
+1,2018,july,HH,hatchery,f,33,mature
+2,2018,july,HH,hatchery,f,27,mature
+3,2018,july,HH,hatchery,m,29,early active
+4,2018,july,HH,hatchery,m,31,mature
+5,2018,july,HH,hatchery,f,36,late active
+6,2018,july,HH,hatchery,m,38,late active
+7,2018,july,HH,hatchery,m,32,mature
+8,2018,july,HH,hatchery,m,42,late active
+9,2018,july,HH,hatchery,m,43,mature
+10,2018,july,HH,hatchery,f,42,mature
+11,2018,july,HH,hatchery,m,27,mature
+12,2018,july,HH,hatchery,f,40,late active
+1,2018,july,HH,aquaculture,m,31,late active
+2,2018,july,HH,aquaculture,f,45,late active
+3,2018,july,HH,aquaculture,m,55,late active
+4,2018,july,HH,aquaculture,m,49,early active
+5,2018,july,HH,aquaculture,m,42,mature
+6,2018,july,HH,aquaculture,m,41,early active
+7,2018,july,HH,aquaculture,f,41,late active
+8,2018,july,HH,aquaculture,f,51,late active
+9,2018,july,HH,aquaculture,f,60,late active
+10,2018,july,HH,aquaculture,m,35,mature
+11,2018,july,HH,aquaculture,m,44,mature
+12,2018,july,HH,aquaculture,f,54,late active
+13,2018,july,HH,aquaculture,m,36,mature
+14,2018,july,HH,aquaculture,m,50,mature
+15,2018,july,HH,aquaculture,f,31,late active
+16,2018,july,HH,aquaculture,m,50,late active
+17,2018,july,HH,aquaculture,m,32,mature
+18,2018,july,HH,aquaculture,m,28,late active
+19,2018,july,HH,aquaculture,m,40,early active
+20,2018,july,HH,aquaculture,f,38,mature
+1,2018,july,SB,wild,m,39,late active
+2,2018,july,SB,wild,m,39,early active
+3,2018,july,SB,wild,m,48,late active
+4,2018,july,SB,wild,f,51,early active
+5,2018,july,SB,wild,m,44,mature
+6,2018,july,SB,wild,f,33,late active
+7,2018,july,SB,wild,m,34,late active
+8,2018,july,SB,wild,m,46,mature
+9,2018,july,SB,wild,f,53,mature
+10,2018,july,SB,wild,f,56,mature
+11,2018,july,SB,wild,f,59,mature
+12,2018,july,SB,wild,m,52,mature
+13,2018,july,SB,wild,f,50,mature
+14,2018,july,SB,wild,m,51,mature
+15,2018,july,SB,wild,m,52,mature
+16,2018,july,SB,wild,m,39,late active
+17,2018,july,SB,wild,f,46,mature
+18,2018,july,SB,wild,m,34,late active
+19,2018,july,SB,wild,m,32,early active
+20,2018,july,SB,wild,m,36,late active
+1,2018,july,SB,hatchery,m,31,mature
+2,2018,july,SB,hatchery,m,98,mature
+3,2018,july,SB,hatchery,f,57,mature
+4,2018,july,SB,hatchery,f,63,mature
+5,2018,july,SB,hatchery,m,42,mature
+6,2018,july,SB,hatchery,m,55,late active
+7,2018,july,SB,hatchery,m,55,mature
+8,2018,july,SB,hatchery,f,30,mature
+9,2018,july,SB,hatchery,m,45,mature
+10,2018,july,SB,hatchery,f,38,late active
+11,2018,july,SB,hatchery,m,64,late active
+12,2018,july,SB,hatchery,m,57,mature
+13,2018,july,SB,hatchery,f,53,mature
+14,2018,july,SB,hatchery,m,37,mature
+15,2018,july,SB,hatchery,f,47,mature
+16,2018,july,SB,hatchery,m,71,mature
+17,2018,july,SB,hatchery,m,70,mature
+18,2018,july,SB,hatchery,f,84,mature
+19,2018,july,SB,hatchery,f,76,mature
+20,2018,july,SB,hatchery,m,83,mature
+1,2018,july,SB,aquaculture,m,42,early active
+2,2018,july,SB,aquaculture,f,38,mature
+3,2018,july,SB,aquaculture,m,38,mature
+4,2018,july,SB,aquaculture,f,41,late active
+5,2018,july,SB,aquaculture,m,40,early active
+6,2018,july,SB,aquaculture,f,46,early active
+7,2018,july,SB,aquaculture,m,56,early active
+8,2018,july,SB,aquaculture,m,44,early active
+9,2018,july,SB,aquaculture,m,44,mature
+10,2018,july,SB,aquaculture,m,46,spawned
+11,2018,july,SB,aquaculture,m,41,early active
+12,2018,july,SB,aquaculture,m,43,late active
+13,2018,july,SB,aquaculture,f,55,early active
+14,2018,july,SB,aquaculture,m,58,early active
+15,2018,july,SB,aquaculture,m,54,mature
+16,2018,july,SB,aquaculture,f,49,mature
+17,2018,july,SB,aquaculture,m,47,mature
+18,2018,july,SB,aquaculture,m,46,mature
+19,2018,july,SB,aquaculture,m,43,mature
+20,2018,july,SB,aquaculture,m,40,mature
+1,2018,july,PGB,wild,m,44,spawned
+2,2018,july,PGB,wild,m,42,mature
+3,2018,july,PGB,wild,m,49,mature
+4,2018,july,PGB,wild,m,27,spawned
+5,2018,july,PGB,wild,m,51,late active
+6,2018,july,PGB,wild,f,41,mature
+7,2018,july,PGB,wild,f,50,mature
+8,2018,july,PGB,wild,m,37,mature
+9,2018,july,PGB,wild,m,50,late active
+10,2018,july,PGB,wild,m,46,late active
+11,2018,july,PGB,wild,m,33,reabsorbing
+12,2018,july,PGB,wild,m,45,mature
+13,2018,july,PGB,wild,m,45,reabsorbing
+14,2018,july,PGB,wild,m,37,reabsorbing
+15,2018,july,PGB,wild,m,51,late active
+16,2018,july,PGB,wild,m,49,mature
+17,2018,july,PGB,wild,f,53,early active
+18,2018,july,PGB,wild,m,44,late active
+19,2018,july,PGB,wild,m,49,mature
+20,2018,july,PGB,wild,f,38,late active
+1,2018,july,PGB,hatchery,m,52,mature
+2,2018,july,PGB,hatchery,m,67,spawned
+3,2018,july,PGB,hatchery,f,55,mature
+4,2018,july,PGB,hatchery,m,66,mature
+5,2018,july,PGB,hatchery,f,69,mature
+6,2018,july,PGB,hatchery,f,68,mature
+7,2018,july,PGB,hatchery,m,55,mature
+8,2018,july,PGB,hatchery,f,69,mature
+9,2018,july,PGB,hatchery,m,55,mature
+10,2018,july,PGB,hatchery,m,54,mature
+11,2018,july,PGB,hatchery,f,57,mature
+12,2018,july,PGB,hatchery,f,74,spawned
+13,2018,july,PGB,hatchery,m,37,late active
+14,2018,july,PGB,hatchery,m,47,mature
+15,2018,july,PGB,hatchery,m,65,mature
+16,2018,july,PGB,hatchery,m,64,mature
+17,2018,july,PGB,hatchery,m,75,mature
+18,2018,july,PGB,hatchery,m,56,mature
+1,2018,july,PGB,aquaculture,m,38,spawned
+2,2018,july,PGB,aquaculture,m,70,late active
+3,2018,july,PGB,aquaculture,f,51,reabsorbing
+4,2018,july,PGB,aquaculture,m,56,mature
+5,2018,july,PGB,aquaculture,f,60,mature
+6,2018,july,PGB,aquaculture,f,46,reabsorbing
+7,2018,july,PGB,aquaculture,m,55,mature
+8,2018,july,PGB,aquaculture,m,55,spawned
+9,2018,july,PGB,aquaculture,m,50,mature
+10,2018,july,PGB,aquaculture,m,61,late active
+11,2018,july,PGB,aquaculture,m,78,late active
+12,2018,july,PGB,aquaculture,m,47,late active
+13,2018,july,PGB,aquaculture,f,57,spawned
+14,2018,july,PGB,aquaculture,m,68,mature
+15,2018,july,PGB,aquaculture,m,59,late active
+17,2018,july,PGB,aquaculture,m,54,mature
+18,2018,july,PGB,aquaculture,m,68,mature
+19,2018,july,PGB,aquaculture,f,62,mature
+20,2018,july,PGB,aquaculture,m,73,mature
+2,2018,august,HH,wild,m,,mature
+3,2018,august,HH,wild,m,,mature
+4,2018,august,HH,wild,f,,mature
+5,2018,august,HH,wild,m,,late active
+6,2018,august,HH,wild,f,,spawned
+7,2018,august,HH,wild,m,,mature
+8,2018,august,HH,wild,f,,reabsorbing
+9,2018,august,HH,wild,m,,mature
+10,2018,august,HH,wild,f,,mature
+11,2018,august,HH,wild,m,,reabsorbing
+12,2018,august,HH,wild,m,,mature
+13,2018,august,HH,wild,m,,mature
+14,2018,august,HH,wild,m,,late active
+15,2018,august,HH,wild,m,,spawned
+16,2018,august,HH,wild,m,,mature
+17,2018,august,HH,wild,f,,mature
+18,2018,august,HH,wild,f,,late active
+19,2018,august,HH,wild,m,,late active
+20,2018,august,HH,wild,m,,mature
+1,2018,august,HH,hatchery,m,,mature
+2,2018,august,HH,hatchery,m,,spawned
+3,2018,august,HH,hatchery,m,,mature
+4,2018,august,HH,hatchery,m,,mature
+5,2018,august,HH,hatchery,m,,mature
+6,2018,august,HH,hatchery,f,,spawned
+7,2018,august,HH,hatchery,m,,late active
+8,2018,august,HH,hatchery,f,,mature
+9,2018,august,HH,hatchery,f,,mature
+10,2018,august,HH,hatchery,m,,mature
+11,2018,august,HH,hatchery,f,,spawned
+12,2018,august,HH,hatchery,m,,mature
+1,2018,august,HH,aquaculture,m,54,late active
+2,2018,august,HH,aquaculture,f,45,late active
+3,2018,august,HH,aquaculture,m,56,reabsorbing
+4,2018,august,HH,aquaculture,f,65,mature
+5,2018,august,HH,aquaculture,f,60,mature
+6,2018,august,HH,aquaculture,f,64,spawned
+7,2018,august,HH,aquaculture,m,44,mature
+8,2018,august,HH,aquaculture,f,41,mature
+9,2018,august,HH,aquaculture,m,39,late active
+10,2018,august,HH,aquaculture,m,55,late active
+11,2018,august,HH,aquaculture,f,45,reabsorbing
+12,2018,august,HH,aquaculture,m,57,late active
+13,2018,august,HH,aquaculture,m,49,reabsorbing
+14,2018,august,HH,aquaculture,m,41,late active
+15,2018,august,HH,aquaculture,m,34,reabsorbing
+16,2018,august,HH,aquaculture,m,50,late active
+17,2018,august,HH,aquaculture,m,61,spawned
+18,2018,august,HH,aquaculture,m,37,mature
+19,2018,august,HH,aquaculture,m,60,reabsorbing
+20,2018,august,HH,aquaculture,f,40,spawned
+1,2018,august,SB,wild,m,52,mature
+2,2018,august,SB,wild,m,52,mature
+3,2018,august,SB,wild,m,63,mature
+4,2018,august,SB,wild,f,55,mature
+5,2018,august,SB,wild,m,46,late active
+6,2018,august,SB,wild,m,55,reabsorbing
+7,2018,august,SB,wild,m,60,late active
+8,2018,august,SB,wild,m,40,mature
+9,2018,august,SB,wild,f,40,mature
+10,2018,august,SB,wild,m,53,mature
+11,2018,august,SB,wild,f,51,mature
+12,2018,august,SB,wild,f,49,late active
+13,2018,august,SB,wild,m,34,mature
+14,2018,august,SB,wild,f,49,mature
+15,2018,august,SB,wild,f,32,mature
+16,2018,august,SB,wild,m,45,mature
+17,2018,august,SB,wild,m,60,mature
+18,2018,august,SB,wild,m,60,late active
+19,2018,august,SB,wild,m,56,spawned
+20,2018,august,SB,wild,f,54,mature
+1,2018,august,SB,hatchery,m,52,reabsorbing
+2,2018,august,SB,hatchery,m,56,late active
+3,2018,august,SB,hatchery,f,49,reabsorbing
+4,2018,august,SB,hatchery,f,43,reabsorbing
+5,2018,august,SB,hatchery,m,63,late active
+6,2018,august,SB,hatchery,f,54,mature
+7,2018,august,SB,hatchery,m,50,mature
+8,2018,august,SB,hatchery,m,50,spawned
+9,2018,august,SB,hatchery,m,46,mature
+10,2018,august,SB,hatchery,m,40,mature
+11,2018,august,SB,hatchery,f,69,reabsorbing
+12,2018,august,SB,hatchery,m,45,spawned
+13,2018,august,SB,hatchery,m,50,reabsorbing
+14,2018,august,SB,hatchery,m,69,late active
+15,2018,august,SB,hatchery,m,58,late active
+16,2018,august,SB,hatchery,f,50,mature
+17,2018,august,SB,hatchery,m,46,late active
+18,2018,august,SB,hatchery,m,47,mature
+19,2018,august,SB,hatchery,f,57,mature
+20,2018,august,SB,hatchery,m,51,mature
+1,2018,august,SB,aquaculture,m,92,mature
+2,2018,august,SB,aquaculture,m,79,mature
+3,2018,august,SB,aquaculture,f,91,spawned
+4,2018,august,SB,aquaculture,m,51,mature
+5,2018,august,SB,aquaculture,m,41,reabsorbing
+6,2018,august,SB,aquaculture,m,49,spawned
+7,2018,august,SB,aquaculture,f,83,reabsorbing
+8,2018,august,SB,aquaculture,m,68,spawned
+9,2018,august,SB,aquaculture,m,55,spawned
+10,2018,august,SB,aquaculture,m,66,reabsorbing
+11,2018,august,SB,aquaculture,m,45,reabsorbing
+12,2018,august,SB,aquaculture,f,64,late active
+13,2018,august,SB,aquaculture,m,84,spawned
+14,2018,august,SB,aquaculture,m,79,spawned
+15,2018,august,SB,aquaculture,f,70,spawned
+16,2018,august,SB,aquaculture,f,62,late active
+17,2018,august,SB,aquaculture,m,63,mature
+18,2018,august,SB,aquaculture,m,49,reabsorbing
+19,2018,august,SB,aquaculture,m,50,late active
+20,2018,august,SB,aquaculture,m,51,mature
+1,2018,august,PGB,wild,m,49,reabsorbing
+2,2018,august,PGB,wild,m,72,mature
+3,2018,august,PGB,wild,m,46,mature
+4,2018,august,PGB,wild,m,63,mature
+5,2018,august,PGB,wild,f,57,mature
+6,2018,august,PGB,wild,m,46,mature
+7,2018,august,PGB,wild,m,54,reabsorbing
+8,2018,august,PGB,wild,m,49,reabsorbing
+10,2018,august,PGB,wild,f,45,reabsorbing
+11,2018,august,PGB,wild,f,42,reabsorbing
+12,2018,august,PGB,wild,f,39,reabsorbing
+13,2018,august,PGB,wild,m,55,reabsorbing
+14,2018,august,PGB,wild,f,46,reabsorbing
+15,2018,august,PGB,wild,m,29,reabsorbing
+17,2018,august,PGB,wild,m,62,mature
+18,2018,august,PGB,wild,m,58,mature
+19,2018,august,PGB,wild,m,49,mature
+20,2018,august,PGB,wild,m,44,spawned
+1,2018,august,PGB,hatchery,m,,reabsorbing
+2,2018,august,PGB,hatchery,m,63,reabsorbing
+3,2018,august,PGB,hatchery,m,35,spawned
+4,2018,august,PGB,hatchery,m,65,reabsorbing
+5,2018,august,PGB,hatchery,m,74,spawned
+6,2018,august,PGB,hatchery,m,54,reabsorbing
+7,2018,august,PGB,hatchery,m,55,reabsorbing
+8,2018,august,PGB,hatchery,m,74,spawned
+9,2018,august,PGB,hatchery,m,52,reabsorbing
+10,2018,august,PGB,hatchery,m,82,mature
+11,2018,august,PGB,hatchery,m,57,reabsorbing
+12,2018,august,PGB,hatchery,f,53,spawned
+13,2018,august,PGB,hatchery,m,51,reabsorbing
+14,2018,august,PGB,hatchery,m,37,reabsorbing
+15,2018,august,PGB,hatchery,m,63,reabsorbing
+16,2018,august,PGB,hatchery,f,49,reabsorbing
+17,2018,august,PGB,hatchery,f,57,spawned
+18,2018,august,PGB,hatchery,m,60,late active
+19,2018,august,PGB,hatchery,m,52,late active
+20,2018,august,PGB,hatchery,f,34,spawned
+1,2018,august,PGB,aquaculture,m,79,spawned
+2,2018,august,PGB,aquaculture,m,84,reabsorbing
+3,2018,august,PGB,aquaculture,m,68,reabsorbing
+4,2018,august,PGB,aquaculture,m,68,reabsorbing
+5,2018,august,PGB,aquaculture,m,71,reabsorbing
+6,2018,august,PGB,aquaculture,m,64,reabsorbing
+7,2018,august,PGB,aquaculture,m,57,reabsorbing
+8,2018,august,PGB,aquaculture,m,70,reabsorbing
+9,2018,august,PGB,aquaculture,m,49,spawned
+10,2018,august,PGB,aquaculture,m,85,spawned
+11,2018,august,PGB,aquaculture,m,69,reabsorbing
+12,2018,august,PGB,aquaculture,m,45,reabsorbing
+13,2018,august,PGB,aquaculture,m,79,early active
+14,2018,august,PGB,aquaculture,m,45,reabsorbing
+15,2018,august,PGB,aquaculture,m,62,spawned
+16,2018,august,PGB,aquaculture,m,71,spawned
+17,2018,august,PGB,aquaculture,m,77,spawned
+19,2018,august,PGB,aquaculture,m,70,reabsorbing
+20,2018,august,PGB,aquaculture,m,58,reabsorbing
