@@ -7,7 +7,7 @@ library(MuMIn)
 library(emmeans)
 
 ################## 2018 MODELS #############################
-Mall <- read.csv("~/Desktop/Cornell/Thesis/Gametogenic Devevlopment Stages/Models/Mall.csv")
+Mall <- read.csv("Mall.csv")
 View(Mall) 
 
 month.f <- factor(Mall$month, levels=c("june", "july", "august"))
@@ -37,11 +37,13 @@ m10 <- clm(ds.f ~ location.f + month.f + strain.f + sex, data=Mall, Hess=T)
 m11 <- clm(ds.f ~ location.f + month.f + strain.f + location.f*month.f + location.f*strain.f + month.f*strain.f + sex, data=Mall, Hess=T)
 #model 7 is still the best model, but followed closely by the above model 11
 
+m12 <- clm(ds.f ~  month.f, data=Mall, Hess=T)
+
 #use AICc if # observations(n) : # of parameters(k) < 40
 nrow(Mall)/7 #7 is max number of parameters in the model list
 # = 63.23, so just use AIC
 
-model.sel(m1,m2,m3,m4,m5,m6,m7,m8,m9,m10,m11, rank="AIC")
+model.sel(m1,m2,m3,m4,m5,m6,m7,m8,m9,m10,m11,m12, rank="AIC")
 
 #post hoc for best model
 emmeans(m7, pairwise ~ location.f | month.f+strain.f)
@@ -51,7 +53,7 @@ emmip(m7, ds.f ~ location.f | month.f+strain.f, CIs = TRUE, mode='prob') + #prec
 
 
 ################# 2019 MODELS #########################
-M19 <- read.csv("~/Desktop/Cornell/Thesis/Gametogenic Devevlopment Stages/Models/M19.csv")
+M19 <- read.csv("M19.csv")
 View(M19)
 
 month.19 <- factor(M19$month, levels=c("July", "Sept"))
@@ -80,12 +82,41 @@ summary(m4.19)
 
 #post hoc for best model
 emmeans(m4.19, pairwise ~ location.19 | month.19+ strain.19)
-#comparing locations at every month strian combo outpus the same p values 
+#comparing locations at every month strain combo outputs the same p values 
 #because location does not have an interaction effect in the model
 
 emmeans(m4.19, pairwise ~ location.19)
 
 emmeans(m4.19, pairwise ~ strain.19 | month.19)
 
+#models and data WITHOUT aquaculture
+M19 <- data.frame(M19)
+w.M19 <- subset(M19, strain!="aquaculture")
+View(w.M19)
+
+w.month.19 <- factor(w.M19$month, levels=c("July", "Sept"))
+w.ds.19 <- factor(w.M19$dev.stage, levels=c("early active", "late active", "mature", "spawned", "reabsorbing"), ordered=T)
+w.location.19 <- factor(w.M19$location, levels=c("IRV", "HH", "PGB", "KCC"))
+w.strain.19 <- factor(w.M19$strain, levels=c("wild", "hatchery", "aquaculture"))
+
+w.m1.19 <- clm(w.ds.19 ~ w.location.19 + w.month.19, data=w.M19, Hess=T)
+
+w.m2.19 <- clm(w.ds.19 ~ w.location.19 + w.month.19 + w.location.19*w.month.19, data=w.M19, Hess=T)
+
+w.m3.19 <- clm(w.ds.19 ~w.month.19, data=w.M19, Hess=T)
+
+
+#use AICc if # observations(n) : # of parameters(k) < 40
+nrow(w.M19)/3 #5 is max number of parameters in the model list
+# = 53.33, so just use AIC
+
+model.sel(w.m1.19, w.m2.19, w.m3.19, rank="AIC" )
+model.avg(w.m1.19, w.m3.19)
+
+emmeans(w.m1.19, pairwise ~ w.location.19)
+
+emmeans(w.m1.19, pairwise ~ w.month.19)
+
+emmeans(w.m3.19, pairwise ~ w.month.19)
 
 

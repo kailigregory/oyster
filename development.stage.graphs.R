@@ -26,7 +26,7 @@ w18 <- ggplot(aes(x=Proportion, y = loc_w18, fill = ds_w18), data=all_wild18)+
   facet_grid(date_w18) + 
   scale_y_discrete(limits=rev)+
   labs(y='Location') +
-  ggtitle("Wild") + 
+  ggtitle("Native") + 
   theme(plot.title = element_text(size=17, face="bold", hjust=0.5),
         strip.text.y = element_blank(),
         axis.text.y = element_text(size=12,  margin = unit(c(t = 0, r = 2.5, b = 0, l = 0), "mm")),
@@ -139,7 +139,7 @@ w19 <- ggplot(aes(x=Proportion, y = loc_w19, fill = ds_w19), data=all_wild19)+
   facet_grid(date_w19) + 
   scale_y_discrete(limits=rev)+
   labs(y='Location') +
-  ggtitle("Wild") + 
+  ggtitle("Native") + 
   theme(plot.title = element_text(size=17, face="bold", hjust=0.5),
         strip.text.y = element_blank(),
         axis.text.y = element_text(size=12,  margin = unit(c(t = 0, r = 2.5, b = 0, l = 0), "mm")),

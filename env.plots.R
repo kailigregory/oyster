@@ -4,105 +4,143 @@
 library(dplyr)
 library(ggplot2)
 library(grid)
+library(ggpubr)
 
-e_data <- read_excel("~/Desktop/Cornell/Thesis/EnvData/e_data.xlsx")
+edata <- read.csv("edata.csv")
 
-e_location <- factor(e_data$location, levels=c("IRV","HH", "SB", "RED", "PGB", "KCC"), ordered=T)
-
-e_month <- factor(e_data$month, levels=c(
-  "Jan 18","Feb 18","Mar 18","Apr 18","May 18",
-  "Jun 18","Jul 18","Aug 18","Sep 18","Oct 18",
-  "Nov 18", "Dec 18","Jan 19","Feb 19","Mar 19",
-  "Apr 19","May 19","Jun 19","Jul 19","Aug 19",
-  "Sep 19"), ordered=T)
-
-temp_graph <- ggplot(e_data, aes(x=e_month, y=temp, group=e_location, color=e_location, na.rm=TRUE)) + 
-  geom_line(size=0.5, position = position_jitterdodge(dodge.width = 0.3)) + 
-  geom_point(aes(shape=e_location),size=2, position = position_jitterdodge(dodge.width = 0.3)) + 
-  labs(x="Month/Year", y="Temperature (ºC)", color="Location") + 
-  theme_linedraw() + 
-  scale_color_brewer(palette="Set2") + 
-  scale_x_discrete(labels=c("Jan 18" = "Jan \n 2018", "Feb 18" = "",
-                            "Mar 18"= "Mar","Apr 18"="","May 18"="May",
-                            "Jun 18"= "","Jul 18"= "Jul","Aug 18"="",
-                            "Sep 18"="Sep","Oct 18"="","Nov 18"="Nov",
-                            "Dec 18"="","Jan 19"="Jan \n 2019","Feb 19"="",
-                            "Mar 19"="Mar","Apr 19"="","May 19"="May",
-                            "Jun 19"="","Jul 19"="Jul","Aug 19"="",
-                            "Sep 19"="Sep"))+
-  scale_shape_manual(values=c(15,16,18,17,10,9)) +
-  annotate("rect", xmin=5.5, xmax=8.5, ymin = 0, ymax = 30,
-           alpha = .4,fill = "grey") + 
-  annotate("rect", xmin=18.5, xmax=21.5, ymin = 0, ymax = 30,
-           alpha = .4,fill = "grey")+
-  theme(axis.title = element_text(size=13),
-        axis.text.x = element_text(size=12, angle=25, margin = unit(c(t = 2.75, r = 0, b = 0, l = 0), "mm")),
-        axis.text.y = element_text(size = 12, margin = unit(c(t = 0, r = 2.5, b = 0, l = 0), "mm")),
-        legend.position = "none",
-        panel.grid.major = element_blank(), 
-        panel.grid.minor = element_blank(), #no gridlines
-        panel.background = element_blank(), 
-        axis.ticks.length = unit(-1.7, "mm"),
-        axis.ticks = element_line(size = .5))
-
-sal_graph <- ggplot(e_data, aes(x=e_month, y=sal, group=e_location, color=e_location, na.rm=TRUE)) + 
-  geom_line(size=0.5, position = position_jitterdodge(dodge.width = 0.3)) + 
-  geom_point(aes(shape=e_location),size=2, position = position_jitterdodge(dodge.width = 0.3)) + 
-  labs(x="Month/Year", y="Salinity (psu)", color="Location") + 
-  theme_linedraw() + 
-  scale_color_brewer(palette="Set2") + 
-  scale_x_discrete(labels=c("Jan 18" = "Jan \n 2018", "Feb 18" = "",
-                            "Mar 18"= "Mar","Apr 18"="","May 18"="May",
-                            "Jun 18"= "","Jul 18"= "Jul","Aug 18"="",
-                            "Sep 18"="Sep","Oct 18"="","Nov 18"="Nov",
-                            "Dec 18"="","Jan 19"="Jan \n 2019","Feb 19"="",
-                            "Mar 19"="Mar","Apr 19"="","May 19"="May",
-                            "Jun 19"="","Jul 19"="Jul","Aug 19"="",
-                            "Sep 19"="Sep"))+
-  scale_shape_manual(values=c(15,16,18,17,10,9)) +
-  annotate("rect", xmin=5.5, xmax=8.5, ymin = 0, ymax = 30,
-           alpha = .4,fill = "grey") + 
-  annotate("rect", xmin=18.5, xmax=21.5, ymin = 0, ymax = 30,
-           alpha = .4,fill = "grey")+
-  theme(axis.title = element_text(size=13),
-        axis.text.x = element_text(size=12, angle=25, margin = unit(c(t = 2.75, r = 0, b = 0, l = 0), "mm")),
-        axis.text.y = element_text(size = 12, margin = unit(c(t = 0, r = 2.5, b = 0, l = 0), "mm")),
-        legend.position = "none",
-        panel.grid.major = element_blank(), 
-        panel.grid.minor = element_blank(), #no gridlines
-        panel.background = element_blank(), 
-        axis.ticks.length = unit(-1.7, "mm"),
-        axis.ticks = element_line(size = .5))
-
-#legend
-Location <- e_location
-
-legend <- ggplot(e_data, aes(x=e_month, y=sal, group=Location, shape=Location, color=Location, na.rm=TRUE)) + 
-  geom_line(size=0.5, position = position_jitterdodge(dodge.width = 0.3)) + 
-  geom_point(aes(shape=Location),size=2, position = position_jitterdodge(dodge.width = 0.3)) + 
-  labs(x="Month/Year", y="Salinity (psu)") + 
-  theme_linedraw()+ theme(axis.text.x=element_text(angle=30)) + 
-  scale_color_brewer(palette="Set2") + 
-  scale_x_discrete(labels=c("Jan 18" = "Jan \n 2018", "Feb 18" = "",
-                            "Mar 18"= "Mar","Apr 18"="","May 18"="May",
-                            "Jun 18"= "","Jul 18"= "Jul","Aug 18"="",
-                            "Sep 18"="Sep","Oct 18"="","Nov 18"="Nov",
-                            "Dec 18"="","Jan 19"="Jan \n 2019","Feb 19"="",
-                            "Mar 19"="Mar","Apr 19"="","May 19"="May",
-                            "Jun 19"="","Jul 19"="Jul","Aug 19"="",
-                            "Sep 19"="Sep"))+
-  scale_shape_manual(values=c(15,16,18,17,10,9)) +
-  annotate("rect", xmin=5.5, xmax=8.5, ymin = 0, ymax = 30,
-           alpha = .4,fill = "grey") + 
-  annotate("rect", xmin=18.5, xmax=21.5, ymin = 0, ymax = 30,
-           alpha = .4,fill = "grey")+
-  theme(axis.title = element_text(size=15),
-        axis.text.x = element_text(size=12),
-        legend.position = "right")
+elocation <- factor(edata$site, levels=c("IRV","HH", "SB", "RED", "PGB", "KCC"), ordered=T)
+edate <- factor(edata$date, levels=c("Jan 2018",
+                                     "Feb 2018",
+                                     "Mar 2018",
+                                     "Apr 2018",
+                                     "May 2018",
+                                     "Jun 2018",
+                                     "Jul 2018",
+                                     "Aug 2018",
+                                     "Sep 2018",
+                                     "Oct 2018",
+                                     "Nov 2018",
+                                     "Dec 2018",
+                                     "Jan 2019",
+                                     "Feb 2019",
+                                     "Mar 2019",
+                                     "Apr 2019",
+                                     "May 2019",
+                                     "Jun 2019",
+                                     "Jul 2019",
+                                     "Aug 2019",
+                                     "Sep 2019",
+                                     "Oct 2019",
+                                     "Nov 2019",
+                                     "Dec 2019"), ordered=T)
   
 
-#combining plots
-grid.newpage()
-grid.draw(rbind(ggplotGrob(temp_graph), ggplotGrob(sal_graph), size = "last"))
+xlabel <- c("Jan 2018"="Jan\n2018",
+            "Feb 2018"= "", 
+            "Mar 2018"="Mar",
+            "Apr 2018"="", 
+            "May 2018"="May",
+            "Jun 2018"="",
+            "Jul 2018"="Jul",
+            "Aug 2018"= "",
+            "Sep 2018"="Sept",
+            "Oct 2018"="",
+            "Nov 2018"="Nov",
+            "Dec 2018"="", 
+            "Jan 2019"="Jan\n2019",
+            "Feb 2019"="", 
+            "Mar 2019"="Mar",
+            "Apr 2019"="",
+            "May 2019"="May",
+            "Jun 2019"="", 
+            "Jul 2019"="Jul",
+            "Aug 2019"="", 
+            "Sep 2019"="Sept", 
+            "Oct 2019"="",
+            "Nov 2019"="Nov", 
+            "Dec 2019"="")
+
+#scale_color_brewer(palette="Set2", guide="legend")+
+
+
+#temp plot
+temp.plot <- ggplot(edata, aes(x=edate, y=temp, group=elocation, color=elocation, shape=elocation, na.rm=T)) +
+  geom_line(size=0.5, position = position_jitterdodge(dodge.width = 0.4), na.rm=T) +
+  geom_point(size=2, position = position_jitterdodge(dodge.width = 0.4), na.rm=T)+
+  labs(x="Month & Year", y="Temperature (ºC)", color="Location") +
+  theme_linedraw()+
+  scale_color_manual(name="Location",
+                     labels= c("IRV","HH","SB","RED","PGB","KCC"),
+                     values=c("#67a9cf","#f1a340","#e9a3c9","#d73027","#4d9221","#762a83"))+
+  scale_shape_manual(name="Location",
+                     labels= c("IRV","HH","SB","RED","PGB","KCC"),
+                     values=c(19,18,17,15,1,7))+
+  scale_x_discrete(labels=xlabel)+
+  annotate("rect", xmin=5.5, xmax=8.5, ymin = 0, ymax = 34,
+           alpha = .4,fill = "grey") + 
+  annotate("rect", xmin=18.5, xmax=21.5, ymin = 0, ymax = 34,
+           alpha = .4,fill = "grey") +
+  theme(axis.title = element_text(size=10),
+        axis.title.x=element_blank(), #no x axis title
+        axis.text.x = element_blank(), #no axis label
+        axis.text.y = element_text(size = 9, margin = unit(c(t = 0, r = 2.5, b = 0, l = 0), "mm")),
+        legend.position = "none",
+        #panel.grid.major = element_blank(), 
+        #panel.grid.minor = element_blank(), #no gridlines
+        panel.background = element_blank(), 
+        axis.ticks.length = unit(-1.5, "mm"),
+        axis.ticks = element_line(size=0.5))
+  
+
+#salinity plot
+sal.plot <- ggplot(edata, aes(x=edate, y=sal, group=elocation, color=elocation, shape=elocation, na.rm=T)) +
+  geom_line(size=0.5, position = position_jitterdodge(dodge.width = 0.4), na.rm=T) +
+  geom_point(size=2, position = position_jitterdodge(dodge.width = 0.4), na.rm=T)+
+  labs(x="Month & Year", y="Salinity (psu)", color="Location") +
+  theme_linedraw()+
+  scale_color_manual(name="Location",
+                     labels= c("IRV","HH","SB","RED","PGB","KCC"),
+                     values=c("#67a9cf","#f1a340","#e9a3c9","#d73027","#4d9221","#762a83"))+
+  scale_shape_manual(name="Location",
+                     labels= c("IRV","HH","SB","RED","PGB","KCC"),
+                     values=c(19,18,17,15,1,7))+
+  scale_x_discrete(labels=xlabel)+
+  annotate("rect", xmin=5.5, xmax=8.5, ymin = 0, ymax = 34,
+           alpha = .4,fill = "grey") + 
+  annotate("rect", xmin=18.5, xmax=21.5, ymin = 0, ymax = 34,
+           alpha = .4,fill = "grey") +
+  theme(axis.title = element_text(size=10),
+        axis.text.x = element_text(size=9),
+        axis.text.y = element_text(size = 9),
+        legend.position = "none",
+        #panel.grid.major = element_blank(), 
+        #panel.grid.minor = element_blank(), #no gridlines
+        panel.background = element_blank(), 
+        axis.ticks.length = unit(-1.5, "mm"),
+        axis.ticks = element_line(size=0.5))
+
+
+ggarrange(temp.plot, sal.plot, nrow=2, ncol=1, common.legend=T, legend="right") +
+  guides(group=guide_legend(nrow=1))
+
+#plots of differences in salinity
+ediff <- read.csv("edifferences.csv")
+View(ediff)
+
+emonth <- factor(ediff$month, levels=c("Jan","Feb","Mar","Apr","May","Jun","Jul",
+                                         "Aug","Sep","Oct","Nov","Dec"), ordered=T)
+
+loc <- factor(ediff$site, levels=c("IRV","HH", "SB", "RED", "PGB", "KCC"), ordered=T)
+
+ggplot(ediff, aes(x=emonth, y=sal.diff, group=loc, color=loc, na.rm=T)) +
+  geom_line(na.rm=T) +
+  geom_point(na.rm=T) +
+  ylim(-10,10)+
+  labs(x="Month", y="Salinity difference 2018-2019 (psu)", color="Location") +
+  theme_linedraw()+
+  scale_color_manual(name="Location",
+                     labels= c("IRV","HH","SB","RED","PGB","KCC"),
+                     values=c("#67a9cf","#f1a340","#e9a3c9","#d73027","#4d9221","#762a83"))
+
 
 
