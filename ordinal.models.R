@@ -119,15 +119,3 @@ emmeans(w.m1.19, pairwise ~ w.location.19)
 emmeans(w.m1.19, pairwise ~ w.month.19)
 
 emmeans(w.m2.19, pairwise ~ w.month.19 + w.location.19)
-
-#### non-ordinal model for 2019 data #####
-
-july.w.M19 <- subset(w.M19, month =="July") #subset for July data
-head(july.w.M19)
-count()
-
-kruskal.test(dev.stage ~ location, data=july.w.M19) #p=0,0583
-pairwise.wilcox.test(july.w.M19$dev.stage, july.w.M19$location, p.adjust.method = "BH")
-
-sept.w.M19 <- subset(w.M19, month =="Sept") #subset for Sept data
-head(sept.w.M19)

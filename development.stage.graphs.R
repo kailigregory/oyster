@@ -8,10 +8,9 @@ library(gridExtra)
 ######## 2018 GRAPHS #############
 
   #Wild 2018
-all_wild18 <- read.csv(
-  "~/Desktop/Cornell/Thesis/Gametogenic Devevlopment Stages/dev stages/all_wild.csv")
+all_wild18 <- read.csv("all_wild.csv")
 
-loc_w18 <- factor(all_wild18$Location, levels=c("HH", "SB", "PGB"), ordered=T)
+loc_w18 <- factor(all_wild18$Location, levels=c("HH", "SB", "RED", "PGB"), ordered=T)
 
 ds_w18 <- factor(all_wild18$Development.Stage, levels=c(
   "reabsorbing","spawning","mature", "late active","early active"), ordered=T)
@@ -42,10 +41,9 @@ w18 <- ggplot(aes(x=Proportion, y = loc_w18, fill = ds_w18), data=all_wild18)+
 w18
 
   #Hatchery 2018
-all_hatch18 <- read.csv(
-  "~/Desktop/Cornell/Thesis/Gametogenic Devevlopment Stages/dev stages/all_hatch.csv")
+all_hatch18 <- read.csv("all_hatch.csv")
 
-loc_h18 <- factor(all_hatch18$Location, levels=c("HH", "SB", "PGB"), ordered=T)
+loc_h18 <- factor(all_hatch18$Location, levels=c("HH", "SB", "RED", "PGB"), ordered=T)
 
 ds_h18 <- factor(all_hatch18$Development.Stage, levels=c(
   "reabsorbing","spawning","mature", "late active","early active"), ordered=T)
@@ -76,10 +74,9 @@ h18 <- ggplot(aes(x=Proportion, y = loc_h18, fill = ds_h18), data=all_hatch18)+
 h18
 
   #Aquaculture 2018
-all_aq18 <- read.csv(
-  "~/Desktop/Cornell/Thesis/Gametogenic Devevlopment Stages/dev stages/all_aq.csv")
+all_aq18 <- read.csv("all_aq.csv")
 
-loc_a18 <- factor(all_aq18$Location, levels=c("HH", "SB", "PGB"), ordered=T)
+loc_a18 <- factor(all_aq18$Location, levels=c("HH", "SB", "RED", "PGB"), ordered=T)
 
 ds_a18 <- factor(all_aq18$Development.Stage, levels=c(
   "reabsorbing","spawning","mature", "late active","early active"), ordered=T)
@@ -118,6 +115,7 @@ legend <- ggplot(aes(x=Proportion, y = loc_a18, fill = ds_a18), data=all_aq18)+
   theme(legend.position = "top") +
   theme(legend.title = element_text(size = 16),
         legend.text = element_text(size=14))
+legend
 
 ################ 2019 GRAPHS ################
   
