@@ -48,9 +48,10 @@ model.sel(m1,m2,m3,m4,m5,m6,m7,m8,m9,m10,m11,m12, rank="AIC")
 
 #post hoc for best model
 emmeans(m7, pairwise ~ location.f | month.f+strain.f)
+emmeans(m7, pairwise ~ month.f | location.f +strain.f)
 
-emmip(m7, ds.f ~ location.f | month.f+strain.f, CIs = TRUE, mode='prob') + #precticted relationship visualization
-  scale_color_manual(values=c("green", "pink", "purple", "orange", "aquamarine"))
+emmip(m7, ds.f ~ location.f | month.f+strain.f, CIs = TRUE, mode='prob')
++ #predicted relationship visualization
 
 
 ################# 2019 MODELS #########################
