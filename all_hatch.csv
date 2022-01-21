@@ -45,10 +45,10 @@ mature,0.666666667,HH,Aug 8-13,Hatchery
 spawning,0.25,HH,Aug 8-13,Hatchery
 reabsorbing,0,HH,Aug 8-13,Hatchery
 early active,0,SB,Aug 8-13,Hatchery
-late active,0.083333333,SB,Aug 8-13,Hatchery
-mature,0.666666667,SB,Aug 8-13,Hatchery
-spawning,0.25,SB,Aug 8-13,Hatchery
-reabsorbing,0,SB,Aug 8-13,Hatchery
+late active,0.25,SB,Aug 8-13,Hatchery
+mature,0.4,SB,Aug 8-13,Hatchery
+spawning,0.1,SB,Aug 8-13,Hatchery
+reabsorbing,0.25,SB,Aug 8-13,Hatchery
 early active,0,RED,Aug 8-13,Hatchery
 late active,0,RED,Aug 8-13,Hatchery
 mature,0,RED,Aug 8-13,Hatchery

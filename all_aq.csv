@@ -29,11 +29,11 @@ late active,0.1,SB,July 8-13,Aquaculture
 mature,0.45,SB,July 8-13,Aquaculture
 spawning,0.05,SB,July 8-13,Aquaculture
 reabsorbing,0,SB,July 8-13,Aquaculture
-early active,0.31,RED,July 8-13,Aquaculture
-late active,0.06,RED,July 8-13,Aquaculture
-mature,0.13,RED,July 8-13,Aquaculture
-spawning,0.31,RED,July 8-13,Aquaculture
-reabsorbing,0.19,RED,July 8-13,Aquaculture
+early active,0.3125,RED,July 8-13,Aquaculture
+late active,0.0625,RED,July 8-13,Aquaculture
+mature,0.125,RED,July 8-13,Aquaculture
+spawning,0.3125,RED,July 8-13,Aquaculture
+reabsorbing,0.1875,RED,July 8-13,Aquaculture
 early active,0,PGB,July 8-13,Aquaculture
 late active,0.263157895,PGB,July 8-13,Aquaculture
 mature,0.473684211,PGB,July 8-13,Aquaculture
@@ -51,11 +51,11 @@ spawning,0.35,SB,Aug 8-13,Aquaculture
 reabsorbing,0.25,SB,Aug 8-13,Aquaculture
 early active,0,RED,Aug 8-13,Aquaculture
 late active,0,RED,Aug 8-13,Aquaculture
-mature,0.06,RED,Aug 8-13,Aquaculture
-spawning,0.06,RED,Aug 8-13,Aquaculture
-reabsorbing,0.89,RED,Aug 8-13,Aquaculture
-early active,0.05,PGB,Aug 8-13,Aquaculture
+mature,0.055555556,RED,Aug 8-13,Aquaculture
+spawning,0.055555556,RED,Aug 8-13,Aquaculture
+reabsorbing,0.888888889,RED,Aug 8-13,Aquaculture
+early active,0.052631579,PGB,Aug 8-13,Aquaculture
 late active,0,PGB,Aug 8-13,Aquaculture
 mature,0,PGB,Aug 8-13,Aquaculture
-spawning,0.35,PGB,Aug 8-13,Aquaculture
-reabsorbing,0.6,PGB,Aug 8-13,Aquaculture
+spawning,0.315789474,PGB,Aug 8-13,Aquaculture
+reabsorbing,0.631578947,PGB,Aug 8-13,Aquaculture

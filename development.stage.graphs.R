@@ -120,8 +120,7 @@ legend
 ################ 2019 GRAPHS ################
   
   #Wild 2019
-all_wild19 <- read.csv(
-  "~/Desktop/Cornell/Thesis/Gametogenic Devevlopment Stages/dev stages/2019/all_wild19.csv")
+all_wild19 <- read.csv("all_wild19.csv")
 
 loc_w19 <- factor(all_wild19$Location, levels=c("IRV","HH","PGB","KCC"), ordered=T)
 
@@ -156,9 +155,7 @@ w19 <- ggplot(aes(x=Proportion, y = loc_w19, fill = ds_w19), data=all_wild19)+
 w19
 
   #aquaculture 2019
-all_aq19 <- read.csv(
-  "~/Desktop/Cornell/Thesis/Gametogenic Devevlopment Stages/dev stages/2019/all_aq19.csv")
-
+all_aq19 <- read.csv("all_aq19.csv")
 loc_a19 <- factor(all_aq19$Location, levels=c("IRV","HH","PGB","KCC"), ordered=T)
 
 ds_a19 <- factor(all_aq19$Development.Stage, levels=c("reabsorbing","spawning","mature", "late active","early active"), ordered=T)

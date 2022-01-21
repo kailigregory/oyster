@@ -34,21 +34,21 @@ late active,0,RED,July 8-13,Wild
 mature,0.4,RED,July 8-13,Wild
 spawning,0,RED,July 8-13,Wild
 reabsorbing,0.6,RED,July 8-13,Wild
-early active,0.058823529,PGB,July 8-13,Wild
-late active,0.352941176,PGB,July 8-13,Wild
-mature,0.470588235,PGB,July 8-13,Wild
-spawning,0.117647059,PGB,July 8-13,Wild
-reabsorbing,0,PGB,July 8-13,Wild
+early active,0.05,PGB,July 8-13,Wild
+late active,0.3,PGB,July 8-13,Wild
+mature,0.4,PGB,July 8-13,Wild
+spawning,0.1,PGB,July 8-13,Wild
+reabsorbing,0.15,PGB,July 8-13,Wild
 early active,0,HH,Aug 8-13,Wild
-late active,0.235294118,HH,Aug 8-13,Wild
-mature,0.647058824,HH,Aug 8-13,Wild
-spawning,0.117647059,HH,Aug 8-13,Wild
-reabsorbing,0,HH,Aug 8-13,Wild
+late active,0.210526316,HH,Aug 8-13,Wild
+mature,0.578947368,HH,Aug 8-13,Wild
+spawning,0.105263158,HH,Aug 8-13,Wild
+reabsorbing,0.105263158,HH,Aug 8-13,Wild
 early active,0,SB,Aug 8-13,Wild
-late active,0.210526316,SB,Aug 8-13,Wild
-mature,0.736842105,SB,Aug 8-13,Wild
-spawning,0.052631579,SB,Aug 8-13,Wild
-reabsorbing,0,SB,Aug 8-13,Wild
+late active,0.2,SB,Aug 8-13,Wild
+mature,0.7,SB,Aug 8-13,Wild
+spawning,0.05,SB,Aug 8-13,Wild
+reabsorbing,0.05,SB,Aug 8-13,Wild
 early active,0,RED,Aug 8-13,Wild
 late active,0,RED,Aug 8-13,Wild
 mature,0,RED,Aug 8-13,Wild
@@ -56,6 +56,6 @@ spawning,0,RED,Aug 8-13,Wild
 reabsorbing,0,RED,Aug 8-13,Wild
 early active,0,PGB,Aug 8-13,Wild
 late active,0,PGB,Aug 8-13,Wild
-mature,0.888888889,PGB,Aug 8-13,Wild
-spawning,0.111111111,PGB,Aug 8-13,Wild
-reabsorbing,0,PGB,Aug 8-13,Wild
+mature,0.444444444,PGB,Aug 8-13,Wild
+spawning,0.055555556,PGB,Aug 8-13,Wild
+reabsorbing,0.5,PGB,Aug 8-13,Wild
