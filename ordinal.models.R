@@ -125,3 +125,7 @@ nrow(w.M19)/3 #5 is max number of parameters in the model list
 
 emmeans(w.m2.19, pairwise ~ month + location)
 
+emmeans(w.m2.19, pairwise ~ month)
+
+emmeans(w.m2.19, pairwise ~ month | location)
+
