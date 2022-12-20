@@ -86,13 +86,13 @@ model.sel(m1.19,m2.19,m3.19,m4.19,m5.19,m6.19, rank="AIC" )
 summary(m4.19)
 
 #post hoc for best model
-emmeans(m4.19, pairwise ~ location.19 | month.19+ strain.19)
+emmeans(m4.19, pairwise ~ location | month+ strain)
 #comparing locations at every month strain combo outputs the same p values 
 #because location does not have an interaction effect in the model
 
-emmeans(m4.19, pairwise ~ location.19)
+emmeans(m4.19, pairwise ~ location)
 
-emmeans(m4.19, pairwise ~ strain.19 | month.19)
+emmeans(m4.19, pairwise ~ strain | month)
 
 #models and data WITHOUT aquaculture
 M19 <- data.frame(M19)
