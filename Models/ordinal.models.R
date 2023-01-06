@@ -1,6 +1,8 @@
 #Kaili Gregory
+#kaili.gregory2012@gmail.com
+#Reproductive oyster phenology project
+
 #Ordinal logistic models
-#Hudson River Estuary oyster project
 
 library(ordinal)
 library(MuMIn)

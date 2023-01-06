@@ -1,6 +1,8 @@
-## Diversity Index generalized linear models
-## Kaili Gregory
-## Cornell // University of Florida
+#Kaili Gregory
+#kaili.gregory2012@gmail.com
+#Reproductive oyster phenology project
+
+# Diversity Index generalized linear models
 
 library(tidyverse)
 library(ggpubr)

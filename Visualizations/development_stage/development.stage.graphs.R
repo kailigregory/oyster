@@ -1,5 +1,8 @@
-#Development Stage Stacked Bar Charts
 #Kaili Gregory
+#kaili.gregory2012@gmail.com
+#Reproductive oyster phenology project
+
+#Development Stage Stacked Bar Charts
 
 library(ggplot2)
 library(grid)

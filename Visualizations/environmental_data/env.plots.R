@@ -1,5 +1,8 @@
-#Environmental Conditions Graphs
 #Kaili Gregory
+#kaili.gregory2012@gmail.com
+#Reproductive oyster phenology project
+
+#Environmental Conditions Graphs
 
 library(dplyr)
 library(ggplot2)
